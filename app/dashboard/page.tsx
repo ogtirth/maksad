@@ -66,6 +66,7 @@ export default function DashboardPage() {
     if (status === "authenticated") {
       fetchSubmissions();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [status, page, startDate, endDate, browser, ipFilter]);
 
   const fetchSubmissions = async () => {
